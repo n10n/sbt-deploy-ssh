@@ -16,8 +16,6 @@ or
 
 **autoplugin (sbt >= 0.13.5)**
 
-## Current version: 0.1.2
-
 [Please read sbt documentation before start to work with plugin](http://www.scala-sbt.org/0.13.5/docs/Getting-Started/Using-Plugins.html)
 
  - [Installation](#installation)

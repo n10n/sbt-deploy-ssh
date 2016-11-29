@@ -1,4 +1,4 @@
-import sbt._
+/*import sbt._
 
 object Version {
   val typesafeConfig = "1.2.1"
@@ -18,3 +18,4 @@ object Dependencies {
     janalyse
   )
 }
+*/

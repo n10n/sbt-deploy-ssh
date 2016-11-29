@@ -31,8 +31,14 @@ or
 
 Add to your `project/plugins.sbt` file:
 
+Old version
 ``` sbt
 addSbtPlugin("com.github.shmishleniy" % "sbt-deploy-ssh" % "0.1.2")
+```
+
+New version
+``` sbt
+addSbtPlugin("com.github.shmishleniy" % "sbt-deploy-ssh" % "[0,)")
 ```
 
 Add resolver to `project/plugins.sbt`:

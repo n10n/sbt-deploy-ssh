@@ -8,14 +8,6 @@ organization := "com.github.shmishleniy"
 
 version := "0.1.2"
 
-scalacOptions ++= Seq(
-  "-feature",
-  "-unchecked",
-  "-deprecation",
-  "-language:_",
-  "-encoding", "UTF-8"
-)
-
 publishMavenStyle := false
 
 bintrayPublishSettings
@@ -28,4 +20,13 @@ bintrayOrganization in bintray := None
 
 resolvers += "JAnalyse Repository" at "http://www.janalyse.fr/repository/"
 
+libraryDependencies ++= Seq(
+  "com.typesafe" % "config" % "1.2.1",
+  "fr.janalyse" %% "janalyse-ssh" % "0.9.19"
+)
+
 libraryDependencies ++= Dependencies.tools
+
+scalacOptions in Compile ++= Seq("-encoding","UTF-8","-target:jvm-1.8","-deprecation","-unchecked","-language:_","-feature")
+
+javacOptions in Compile ++= Seq("-encoding","UTF-8","-source","1.8","-target","1.8")
